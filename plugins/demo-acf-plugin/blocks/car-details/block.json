@@ -1,0 +1,33 @@
+{
+    "name": "acf/car-details",
+    "title": "Car Details (ACF Block)",
+    "description": "Display a cars details.",
+    "category": "demo-acf-blocks",
+    "icon": "car",
+    "keywords": ["details", "car"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "template.php"
+    },
+    "supports": {
+        "align": true,
+        "anchor": true,
+        "mode": false,
+        "color": {
+            "text": true,
+            "background": true
+        }
+    },
+    "style": ["file:./style.css"],
+    "styles": [
+        {
+            "name": "default",
+            "label": "Default",
+            "isDefault": true
+        },
+        {
+            "name": "condensed",
+            "label": "Condensed"
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+{
+    "key": "taxonomy_65ba664d887e3",
+    "title": "Conditions",
+    "menu_order": 0,
+    "active": true,
+    "taxonomy": "condition",
+    "object_type": [
+        "car"
+    ],
+    "advanced_configuration": 1,
+    "import_source": "",
+    "import_date": "",
+    "labels": {
+        "name": "Conditions",
+        "singular_name": "Condition",
+        "menu_name": "Conditions",
+        "all_items": "All Conditions",
+        "edit_item": "Edit Condition",
+        "view_item": "View Condition",
+        "update_item": "Update Condition",
+        "add_new_item": "Add New Condition",
+        "new_item_name": "New Condition Name",
+        "search_items": "Search Conditions",
+        "popular_items": "Popular Conditions",
+        "separate_items_with_commas": "Separate conditions with commas",
+        "add_or_remove_items": "Add or remove conditions",
+        "choose_from_most_used": "Choose from the most used conditions",
+        "most_used": "",
+        "not_found": "No conditions found",
+        "no_terms": "No conditions",
+        "name_field_description": "",
+        "slug_field_description": "",
+        "desc_field_description": "",
+        "items_list_navigation": "Conditions list navigation",
+        "items_list": "Conditions list",
+        "back_to_items": "← Go to conditions",
+        "item_link": "Condition Link",
+        "item_link_description": "A link to a condition"
+    },
+    "description": "",
+    "capabilities": {
+        "manage_terms": "manage_categories",
+        "edit_terms": "manage_categories",
+        "delete_terms": "manage_categories",
+        "assign_terms": "edit_posts"
+    },
+    "public": 1,
+    "publicly_queryable": 1,
+    "hierarchical": 0,
+    "show_ui": 1,
+    "show_in_menu": 1,
+    "show_in_nav_menus": 1,
+    "show_in_rest": 1,
+    "rest_base": "",
+    "rest_namespace": "wp\/v2",
+    "rest_controller_class": "WP_REST_Terms_Controller",
+    "show_tagcloud": 1,
+    "show_in_quick_edit": 1,
+    "show_admin_column": 1,
+    "rewrite": {
+        "permalink_rewrite": "no_permalink"
+    },
+    "query_var": "post_type_key",
+    "query_var_name": "",
+    "default_term": {
+        "default_term_enabled": "0"
+    },
+    "sort": 0,
+    "meta_box": "default",
+    "meta_box_cb": "",
+    "meta_box_sanitize_cb": "",
+    "modified": 1706714911
+}

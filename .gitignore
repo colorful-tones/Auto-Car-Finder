@@ -1,0 +1,112 @@
+#----------------------------------------
+# This Git ignore should be located
+# in your WordPress install's wp-content/
+# directory.
+#----------------------------------------
+
+#---------------------------
+# WordPress general
+#---------------------------
+/index.php
+
+#---------------------------
+# WordPress themes
+#---------------------------
+/themes/*
+
+# DO NOT ignore these themes...
+!/themes/autocarfinder
+
+#---------------------------
+# WordPress plugins
+#---------------------------
+/plugins/*
+
+# DO NOT ignore these plugins...
+!/plugins/demo-acf-plugin
+
+#---------------------------
+# WP MU plugins: often
+# managed by the platform.
+#---------------------------
+/mu-plugins/
+
+#---------------------------
+# WP uploads directory
+#---------------------------
+/uploads/
+
+#---------------------------
+# WP upgrade files
+#---------------------------
+/upgrade/
+
+#---------------------------
+# OS-specific files
+#---------------------------
+.DS_Store
+.Trashes
+Thumbs.db
+
+#---------------------------
+# Composer
+#---------------------------
+/vendor
+.env
+.env.*
+!.env.example
+
+#---------------------------
+# Smart Plugin Manager
+#---------------------------
+/.logs/
+autoupdater_maintenance_mode_enabled.tmp
+
+#---------------------------
+# large/disallowed file types
+# a CDN should be used for these
+#---------------------------
+*.hqx
+*.bin
+*.exe
+*.dll
+*.deb
+*.dmg
+*.iso
+*.img
+*.msi
+*.msp
+*.msm
+*.mid
+*.midi
+*.kar
+*.mp3
+*.ogg
+*.m4a
+*.ra
+*.3gpp
+*.3gp
+*.mp4
+*.mpeg
+*.mpg
+*.mov
+*.webm
+*.flv
+*.m4v
+*.mng
+*.asx
+*.asf
+*.wmv
+*.avi
+*.log
+
+#---------------------------
+# Build tools
+#---------------------------
+node_modules
+
+#---------------------------
+# Other
+#---------------------------
+.gitattributes
+advanced-cache.php

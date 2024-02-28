@@ -1,0 +1,21 @@
+.vehicle-price {
+	font-size: var(--wp--preset--font-size--x-large);
+	font-weight: 800;
+	line-height: 1;
+}
+
+.vehicle-price::before {
+	content: "$";
+	font-size: 40%;
+	line-height: 1;
+	vertical-align: super;
+}
+
+.wp-block-query .vehicle-price {
+	font-size: 1.2rem;
+}
+
+.wp-block-query .vehicle-price::before {
+	font-size: 100%;
+	vertical-align: baseline;
+}

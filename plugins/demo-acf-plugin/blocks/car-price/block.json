@@ -1,0 +1,22 @@
+{
+    "name": "acf/car-price",
+    "title": "Car Price (ACF Block)",
+    "description": "Display a cars price.",
+    "category": "demo-acf-blocks",
+    "icon": "money-alt",
+    "keywords": ["price", "car"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "template.php"
+    },
+    "supports": {
+        "align": true,
+        "anchor": true,
+        "mode": false,
+        "color": {
+            "text": true,
+            "background": true
+        }
+    },
+	"style": ["file:./style.css"]
+}
