@@ -1,17 +1,17 @@
 <!-- wp:template-part {"slug":"header","tagName":"header","className":"site-header"} /-->
 
-<!-- wp:group {"tagName":"main","align":"wide","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"},"blockGap":"var:preset|spacing|medium"}},"layout":{"type":"constrained"}} -->
-<main class="wp-block-group alignwide" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<!-- wp:group {"tagName":"main","align":"wide","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large"},"blockGap":"var:preset|spacing|medium"}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group alignwide" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group alignwide"><!-- wp:post-title {"level":1,"align":"wide","style":{"layout":{"selfStretch":"fill","flexSize":null},"typography":{"fontStyle":"normal","fontWeight":"600"}},"fontSize":"x-large"} /-->
 
 <!-- wp:acf/car-price {"name":"acf/car-price","mode":"preview","style":{"layout":{"selfStretch":"fit","flexSize":null}}} /--></div>
 <!-- /wp:group -->
 
-<!-- wp:post-content /-->
+<!-- wp:post-content {"align":"wide"} /-->
 
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"70%"} -->
-<div class="wp-block-column" style="flex-basis:70%"><!-- wp:group {"align":"full","layout":{"type":"constrained"}} -->
+<div class="wp-block-column" style="flex-basis:70%"><!-- wp:group {"align":"full","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull"><!-- wp:acf/car-details {"name":"acf/car-details","align":"wide","mode":"preview"} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
@@ -38,49 +38,44 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|20"},"border":{"radius":"8px"},"typography":{"fontSize":"0.95rem"}},"backgroundColor":"tertiary","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-tertiary-background-color has-background" style="border-radius:8px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50);font-size:0.95rem"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"nowrap"},"fontSize":"small"} -->
+<div class="wp-block-group alignfull has-tertiary-background-color has-background" style="border-radius:8px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50);font-size:0.95rem"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"fontSize":"small","layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group alignwide has-small-font-size"><!-- wp:paragraph {"fontSize":"small"} -->
 <p class="has-small-font-size">Interested in buying? <strong>Contact the dealer.</strong></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:form -->
-<form class="wp-block-form" enctype="text/plain">
-<!-- wp:form-submission-notification -->
-<div class="wp-block-form-submission-notification form-notification-type-success">
-<!-- wp:paragraph -->
+<form class="wp-block-form" enctype="text/plain"><!-- wp:form-submission-notification -->
+<div class="wp-block-form-submission-notification form-notification-type-success"><!-- wp:paragraph -->
 <p><mark style="background-color:rgba(0, 0, 0, 0);color:#345C00" class="has-inline-color">Your form has been submitted successfully</mark></p>
-<!-- /wp:paragraph -->
-</div>
+<!-- /wp:paragraph --></div>
 <!-- /wp:form-submission-notification -->
+
 <!-- wp:form-submission-notification {"type":"error"} -->
-<div class="wp-block-form-submission-notification form-notification-type-error">
-<!-- wp:paragraph -->
+<div class="wp-block-form-submission-notification form-notification-type-error"><!-- wp:paragraph -->
 <p><mark style="background-color:rgba(0, 0, 0, 0);color:#CF2E2E" class="has-inline-color">There was an error submitting your form.</mark></p>
-<!-- /wp:paragraph -->
-</div>
+<!-- /wp:paragraph --></div>
 <!-- /wp:form-submission-notification -->
+
 <!-- wp:form-input -->
 <div class="wp-block-form-input"><label class="wp-block-form-input__label"><span class="wp-block-form-input__label-content">Name</span><input class="wp-block-form-input__input" type="text" name="name" required aria-required="true"/></label></div>
 <!-- /wp:form-input -->
+
 <!-- wp:form-input {"type":"email"} -->
 <div class="wp-block-form-input"><label class="wp-block-form-input__label"><span class="wp-block-form-input__label-content">Email</span><input class="wp-block-form-input__input" type="email" name="email" required aria-required="true"/></label></div>
 <!-- /wp:form-input -->
+
 <!-- wp:form-input -->
 <div class="wp-block-form-input"><label class="wp-block-form-input__label"><span class="wp-block-form-input__label-content">Phone</span><input class="wp-block-form-input__input" type="text" name="phone" required aria-required="true"/></label></div>
 <!-- /wp:form-input -->
+
 <!-- wp:form-submit-button -->
-<div class="wp-block-form-submit-button">
-<!-- wp:buttons -->
-<div class="wp-block-buttons">
-<!-- wp:button {"tagName":"button","type":"submit","width":100,"style":{"spacing":{"padding":{"left":"var:preset|spacing|30","right":"var:preset|spacing|30","top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}},"typography":{"fontSize":"1rem"}}} -->
+<div class="wp-block-form-submit-button"><!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"tagName":"button","type":"submit","width":100,"style":{"spacing":{"padding":{"left":"var:preset|spacing|30","right":"var:preset|spacing|30","top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}},"typography":{"fontSize":"1rem"}}} -->
 <div class="wp-block-button has-custom-width wp-block-button__width-100 has-custom-font-size" style="font-size:1rem"><button type="submit" class="wp-block-button__link wp-element-button" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--30)">Send Email</button></div>
-<!-- /wp:button -->
-</div>
-<!-- /wp:buttons -->
-</div>
-<!-- /wp:form-submit-button -->
-</form>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:form-submit-button --></form>
 <!-- /wp:form --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
@@ -92,9 +87,9 @@
 <h2 class="wp-block-heading alignwide has-secondary-color has-text-color has-link-color has-base-font-size" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--50);font-style:normal;font-weight:700">Recommended For You</h2>
 <!-- /wp:heading -->
 
-<!-- wp:query {"queryId":1,"query":{"perPage":"3","pages":"3","offset":"1","postType":"car","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[]},"align":"wide"} -->
-<div class="wp-block-query alignwide"><!-- wp:post-template {"style":{"spacing":{"blockGap":"var:preset|spacing|large"}},"layout":{"type":"grid","columnCount":3},"fontSize":"large"} -->
-<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","padding":{"bottom":"var:preset|spacing|60"}},"elements":{"link":{"color":{"text":"var:preset|color|main"}}},"border":{"radius":"8px"}},"backgroundColor":"base","textColor":"secondary","className":"is-style-column-box-shadow","layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap","justifyContent":"stretch"}} -->
+<!-- wp:query {"queryId":1,"query":{"perPage":"4","pages":"3","offset":"1","postType":"car","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[]},"align":"wide"} -->
+<div class="wp-block-query alignwide"><!-- wp:post-template {"style":{"spacing":{"blockGap":"var:preset|spacing|medium"}},"fontSize":"large","layout":{"type":"grid","columnCount":4}} -->
+<!-- wp:group {"className":"is-style-column-box-shadow","style":{"spacing":{"blockGap":"var:preset|spacing|20","padding":{"bottom":"var:preset|spacing|60"}},"elements":{"link":{"color":{"text":"var:preset|color|main"}}},"border":{"radius":"8px"}},"backgroundColor":"base","textColor":"secondary","layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap","justifyContent":"stretch"}} -->
 <div class="wp-block-group is-style-column-box-shadow has-secondary-color has-base-background-color has-text-color has-background has-link-color" style="border-radius:8px;padding-bottom:var(--wp--preset--spacing--60)"><!-- wp:post-featured-image {"isLink":true,"aspectRatio":"4/3","style":{"border":{"radius":{"topLeft":"8px","topRight":"8px"}}}} /-->
 
 <!-- wp:post-title {"isLink":true,"style":{"spacing":{"margin":{"top":"var:preset|spacing|20","right":"var:preset|spacing|50","bottom":"0px","left":"var:preset|spacing|50"}},"typography":{"fontStyle":"normal","fontWeight":"600","textDecoration":"none"},"elements":{"link":{"color":{"text":"var:preset|color|main"},":hover":{"color":{"text":"var:preset|color|primary"}}}}},"textColor":"main","fontSize":"base"} /-->
