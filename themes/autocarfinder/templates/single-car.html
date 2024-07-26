@@ -4,8 +4,10 @@
 <main class="wp-block-group alignwide" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group alignwide"><!-- wp:post-title {"level":1,"align":"wide","style":{"layout":{"selfStretch":"fill","flexSize":null},"typography":{"fontStyle":"normal","fontWeight":"600"}},"fontSize":"x-large"} /-->
 
-<!-- wp:acf/car-price {"name":"acf/car-price","data":[],"mode":"preview","style":{"layout":{"selfStretch":"fit","flexSize":null}}} /--></div>
+<!-- wp:acf/car-price {"name":"acf/car-price","mode":"preview","style":{"layout":{"selfStretch":"fit","flexSize":null}}} /--></div>
 <!-- /wp:group -->
+
+<!-- wp:post-content /-->
 
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"70%"} -->
@@ -43,37 +45,42 @@
 <!-- /wp:group -->
 
 <!-- wp:form -->
-<form class="wp-block-form" enctype="text/plain"><!-- wp:form-submission-notification -->
-<div class="wp-block-form-submission-notification form-notification-type-success"><!-- wp:paragraph -->
+<form class="wp-block-form" enctype="text/plain">
+<!-- wp:form-submission-notification -->
+<div class="wp-block-form-submission-notification form-notification-type-success">
+<!-- wp:paragraph -->
 <p><mark style="background-color:rgba(0, 0, 0, 0);color:#345C00" class="has-inline-color">Your form has been submitted successfully</mark></p>
-<!-- /wp:paragraph --></div>
+<!-- /wp:paragraph -->
+</div>
 <!-- /wp:form-submission-notification -->
-
 <!-- wp:form-submission-notification {"type":"error"} -->
-<div class="wp-block-form-submission-notification form-notification-type-error"><!-- wp:paragraph -->
+<div class="wp-block-form-submission-notification form-notification-type-error">
+<!-- wp:paragraph -->
 <p><mark style="background-color:rgba(0, 0, 0, 0);color:#CF2E2E" class="has-inline-color">There was an error submitting your form.</mark></p>
-<!-- /wp:paragraph --></div>
+<!-- /wp:paragraph -->
+</div>
 <!-- /wp:form-submission-notification -->
-
 <!-- wp:form-input -->
 <div class="wp-block-form-input"><label class="wp-block-form-input__label"><span class="wp-block-form-input__label-content">Name</span><input class="wp-block-form-input__input" type="text" name="name" required aria-required="true"/></label></div>
 <!-- /wp:form-input -->
-
 <!-- wp:form-input {"type":"email"} -->
 <div class="wp-block-form-input"><label class="wp-block-form-input__label"><span class="wp-block-form-input__label-content">Email</span><input class="wp-block-form-input__input" type="email" name="email" required aria-required="true"/></label></div>
 <!-- /wp:form-input -->
-
 <!-- wp:form-input -->
 <div class="wp-block-form-input"><label class="wp-block-form-input__label"><span class="wp-block-form-input__label-content">Phone</span><input class="wp-block-form-input__input" type="text" name="phone" required aria-required="true"/></label></div>
 <!-- /wp:form-input -->
-
 <!-- wp:form-submit-button -->
-<div class="wp-block-form-submit-button"><!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"tagName":"button","type":"submit","width":100,"style":{"spacing":{"padding":{"left":"var:preset|spacing|30","right":"var:preset|spacing|30","top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}},"typography":{"fontSize":"1rem"}}} -->
+<div class="wp-block-form-submit-button">
+<!-- wp:buttons -->
+<div class="wp-block-buttons">
+<!-- wp:button {"tagName":"button","type":"submit","width":100,"style":{"spacing":{"padding":{"left":"var:preset|spacing|30","right":"var:preset|spacing|30","top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}},"typography":{"fontSize":"1rem"}}} -->
 <div class="wp-block-button has-custom-width wp-block-button__width-100 has-custom-font-size" style="font-size:1rem"><button type="submit" class="wp-block-button__link wp-element-button" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--30)">Send Email</button></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons --></div>
-<!-- /wp:form-submit-button --></form>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:form-submit-button -->
+</form>
 <!-- /wp:form --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
