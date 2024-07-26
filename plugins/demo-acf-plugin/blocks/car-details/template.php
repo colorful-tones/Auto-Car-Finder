@@ -18,12 +18,12 @@ if ( ! empty( $block['anchor'] ) ) {
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$class_name = 'vehicle-details-block';
+$block_classes = 'vehicle-details-block';
 if ( ! empty( $block['className'] ) ) {
-	$class_name .= ' ' . $block['className'];
+	$block_classes .= ' ' . $block['className'];
 }
 if ( ! empty( $block['align'] ) ) {
-	$class_name .= ' align' . $block['align'];
+	$block_classes .= ' align' . $block['align'];
 }
 
 // Number field.
@@ -38,7 +38,20 @@ $colors = get_field( 'demo_vehicle_colors', $post_id );
 $gallery = get_field( 'demo_vehicle_gallery', $post_id );
 ?>
 
-<div <?php echo esc_attr( $anchor ); ?>class="<?php echo esc_attr( $class_name ); ?>">
+<?php if ( ! $is_preview ) : ?>
+	<div
+		<?php
+		echo wp_kses_data(
+			get_block_wrapper_attributes(
+				array(
+					'id'    => esc_attr( $block_id ),
+					'class' => $block_classes,
+				)
+			)
+		);
+		?>
+	>
+<?php endif; ?>
 
 	<div class="vehicle-gallery">
 		<?php
@@ -109,4 +122,6 @@ $gallery = get_field( 'demo_vehicle_gallery', $post_id );
 		<?php endif; ?>
 	</ul>
 
-</div>
+<?php if ( ! $is_preview ) : ?>
+	</div>
+<?php endif; ?>
