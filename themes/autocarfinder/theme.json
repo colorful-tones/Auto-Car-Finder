@@ -8,14 +8,6 @@
 			"title": "Page (Full Width, No Title)"
 		},
 		{
-			"name": "page-with-sidebar",
-			"postTypes": [
-				"post",
-				"page"
-			],
-			"title": "Page (With Sidebar)"
-		},
-		{
 			"name": "single-car",
 			"postTypes": [
 				"cars"
@@ -939,11 +931,6 @@
 			"area": "footer",
 			"name": "footer",
 			"title": "Footer"
-		},
-		{
-			"area": "sidebar",
-			"name": "sidebar",
-			"title": "Sidebar"
 		}
 	],
 	"version": 3,
