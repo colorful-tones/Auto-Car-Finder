@@ -1,32 +1,27 @@
-#----------------------------------------
-# This Git ignore should be located
-# in your WordPress install's wp-content/
-# directory.
-#----------------------------------------
-
 #---------------------------
 # WordPress general
 #---------------------------
+# Ignore the wp-content/index.php
 /index.php
 
 #---------------------------
 # WordPress themes
 #---------------------------
+# Ignore all themes
 /themes/*
-
-# DO NOT ignore these themes...
+# DO NOT ignore this theme!
 !/themes/autocarfinder
 
 #---------------------------
 # WordPress plugins
 #---------------------------
+# Ignore all plugins
 /plugins/*
-
-# DO NOT ignore these plugins...
+# DO NOT ignore this plugin!
 !/plugins/demo-acf-plugin
 
 #---------------------------
-# WP MU plugins: often
+# WP MU plugins: these are
 # managed by the platform.
 #---------------------------
 /mu-plugins/
@@ -42,22 +37,16 @@
 /upgrade/
 
 #---------------------------
-# OS-specific files
-#---------------------------
-.DS_Store
-.Trashes
-Thumbs.db
-
-#---------------------------
 # Composer
 #---------------------------
 /vendor
+auth.json
 .env
 .env.*
 !.env.example
 
 #---------------------------
-# Smart Plugin Manager
+# WPE - Smart Plugin Manager
 #---------------------------
 /.logs/
 autoupdater_maintenance_mode_enabled.tmp
@@ -101,12 +90,8 @@ autoupdater_maintenance_mode_enabled.tmp
 *.log
 
 #---------------------------
-# Build tools
+# OS-specific files
 #---------------------------
-node_modules
-
-#---------------------------
-# Other
-#---------------------------
-.gitattributes
-advanced-cache.php
+.DS_Store
+.Trashes
+Thumbs.db
