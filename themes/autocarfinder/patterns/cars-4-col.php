@@ -21,7 +21,7 @@
 			<!-- /wp:group -->
 
 			<!-- wp:group {"layout":{"type":"default"}} -->
-			<div class="wp-block-group"><!-- wp:acf/car-details-condensed {"name":"acf/car-details-condensed","mode":"preview","fontSize":"x-small","style":{"spacing":{"margin":{"right":"0","left":"0"},"padding":{"right":"1.5rem","left":"1.5rem"}}}} /--></div>
+			<div class="wp-block-group"><!-- wp:acf/car-details-condensed {"name":"acf/car-details-condensed","mode":"preview","fontSize":"xx-small","style":{"spacing":{"margin":{"right":"0","left":"0"},"padding":{"right":"1.5rem","left":"1.5rem"}}}} /--></div>
 			<!-- /wp:group -->
 		</div>
 		<!-- /wp:group -->
