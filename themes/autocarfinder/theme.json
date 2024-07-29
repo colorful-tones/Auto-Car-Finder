@@ -318,10 +318,19 @@
 			"fontSizes": [
 				{
 					"fluid": {
+						"max": "0.8rem",
+						"min": "0.78rem"
+					},
+					"name": "2xs",
+					"size": "0.8rem",
+					"slug": "xx-small"
+				},
+				{
+					"fluid": {
 						"max": "1rem",
 						"min": ".9rem"
 					},
-					"name": "Extra Small",
+					"name": "Xs",
 					"size": "1rem",
 					"slug": "x-small"
 				},
