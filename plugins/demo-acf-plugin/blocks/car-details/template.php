@@ -18,12 +18,12 @@ if ( ! empty( $block['anchor'] ) ) {
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$class_name = 'vehicle-details-block';
+$block_classes = 'vehicle-details-block';
 if ( ! empty( $block['className'] ) ) {
-	$class_name .= ' ' . $block['className'];
+	$block_classes .= ' ' . $block['className'];
 }
 if ( ! empty( $block['align'] ) ) {
-	$class_name .= ' align' . $block['align'];
+	$block_classes .= ' align' . $block['align'];
 }
 
 // Number field.
@@ -38,7 +38,20 @@ $colors = get_field( 'demo_vehicle_colors', $post_id );
 $gallery = get_field( 'demo_vehicle_gallery', $post_id );
 ?>
 
-<div <?php echo esc_attr( $anchor ); ?>class="<?php echo esc_attr( $class_name ); ?>">
+<?php if ( ! $is_preview ) : ?>
+	<div
+		<?php
+		echo wp_kses_data(
+			get_block_wrapper_attributes(
+				array(
+					'id'    => esc_attr( $block_id ),
+					'class' => $block_classes,
+				)
+			)
+		);
+		?>
+	>
+<?php endif; ?>
 
 	<div class="vehicle-gallery">
 		<?php
@@ -70,7 +83,7 @@ $gallery = get_field( 'demo_vehicle_gallery', $post_id );
 		<?php endif; ?>
 	</div><!-- .vehicle-gallery -->
 
-	<ul class="vehicle-details">
+	<ul class="vehicle-details unlist">
 		<?php if ( $mileage ) : ?>
 			<li class="vehicle-mileage">
 				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg>
@@ -109,4 +122,6 @@ $gallery = get_field( 'demo_vehicle_gallery', $post_id );
 		<?php endif; ?>
 	</ul>
 
-</div>
+<?php if ( ! $is_preview ) : ?>
+	</div>
+<?php endif; ?>

@@ -20,7 +20,6 @@ function setup() {
 }
 add_action( 'after_setup_theme', __NAMESPACE__ . '\setup' );
 
-
 /**
  * Enqueue styles.
  */
@@ -29,7 +28,6 @@ function enqueue_style_sheet() {
 }
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_style_sheet' );
 
-
 /**
  * Add Dashicons for use with block styles.
  */
@@ -37,7 +35,6 @@ function enqueue_block_dashicons() {
 	wp_enqueue_style( 'dashicons' );
 }
 add_action( 'enqueue_block_assets', __NAMESPACE__ . '\enqueue_block_dashicons' );
-
 
 /**
  * Add block style variations.
@@ -111,7 +108,6 @@ function register_block_styles() {
 }
 add_action( 'init', __NAMESPACE__ . '\register_block_styles' );
 
-
 /**
  * Load custom block styles only when the block is used.
  */
@@ -137,7 +133,6 @@ function enqueue_custom_block_styles() {
 	}
 }
 add_action( 'init', __NAMESPACE__ . '\enqueue_custom_block_styles' );
-
 
 /**
  * Register pattern categories.
@@ -177,31 +172,3 @@ function pattern_categories() {
 }
 add_action( 'init', __NAMESPACE__ . '\pattern_categories', 9 );
 
-
-/**
- * Remove last separator on blog/archive if no pagination exists.
- */
-function is_paginated() {
-	global $wp_query;
-	if ( $wp_query->max_num_pages < 2 ) {
-		echo '<style>.blog .wp-block-post-template .wp-block-post:last-child .entry-content + .wp-block-separator, .archive .wp-block-post-template .wp-block-post:last-child .entry-content + .wp-block-separator, .blog .wp-block-post-template .wp-block-post:last-child .entry-content + .wp-block-separator, .search .wp-block-post-template .wp-block-post:last-child .wp-block-post-excerpt + .wp-block-separator { display: none; }</style>';
-	}
-}
-add_action( 'wp_head', __NAMESPACE__ . '\is_paginated' );
-
-
-/**
- * Add a Sidebar template part area
- */
-function template_part_areas( array $areas ) {
-	$areas[] = array(
-		'area'        => 'sidebar',
-		'area_tag'    => 'section',
-		'label'       => __( 'Sidebar', 'autocarfinder' ),
-		'description' => __( 'The Sidebar template defines a page area that can be found on the Page (With Sidebar) template.', 'autocarfinder' ),
-		'icon'        => 'sidebar',
-	);
-
-	return $areas;
-}
-add_filter( 'default_wp_template_part_areas', __NAMESPACE__ . '\template_part_areas' );

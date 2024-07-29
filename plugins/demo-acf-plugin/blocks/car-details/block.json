@@ -18,16 +18,5 @@
             "background": true
         }
     },
-    "style": ["file:./style.css"],
-    "styles": [
-        {
-            "name": "default",
-            "label": "Default",
-            "isDefault": true
-        },
-        {
-            "name": "condensed",
-            "label": "Condensed"
-        }
-    ]
+    "style": ["file:./style.css"]
 }

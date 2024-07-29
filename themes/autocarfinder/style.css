@@ -3,9 +3,9 @@ Theme Name: AutoCarFinder
 Author: WP Engine DevRel
 Description: A theme for the AutoCarFinder website.
 Requires at least: 6.0
-Tested up to: 6.4.3
-Requires PHP: 5.7
-Version: 1.0.4
+Tested up to: 6.6
+Requires PHP: 7.4
+Version: 1.0.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: autocarfinder
@@ -41,13 +41,6 @@ strong {
 ol,
 ul {
 	padding: 0;
-}
-
-ol:where(:not([class*="wp-block"])),
-ol:where(.wp-block-list),
-ul:where(:not([class*="wp-block"])),
-ul:where(.wp-block-list) {
-	padding-inline-start: var(--wp--preset--spacing--medium);
 }
 
 div[class*="wp-block-"] figcaption {
@@ -117,6 +110,10 @@ label {
 
 a.more-link {
 	display: block;
+}
+
+ul:where(.unlist) {
+	list-style: none;
 }
 
 /* Inline code */

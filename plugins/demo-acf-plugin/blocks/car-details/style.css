@@ -1,21 +1,4 @@
-.vehicle-details-block:where(.is-style-condensed) .vehicle-gallery {
-	display: none;
-}
-
-.vehicle-details-block:where(.is-style-condensed) .vehicle-details {
-	border-top: 1px solid var(--wp--preset--color--tertiary);
-	font-size: 0.85rem;
-	margin: 0;
-	padding-top: calc(0.25 * var(--wp--preset--spacing--small));
-	width: 100%;
-}
-
-.vehicle-details-block:where(.is-style-condensed) .vehicle-details li {
-	border-top: none;
-	padding: calc(0.25 * var(--wp--preset--spacing--small)) 0;
-}
-
-.vehicle-color-swatch {
+:where(.vehicle-details-block) .vehicle-color-swatch {
 	border: 1px solid var(--wp--preset--color--primary-accent);
 	border-radius: 50%;
 	display: inline-flex;
@@ -24,18 +7,18 @@
 	width: 20px;
 }
 
-.vehicle-color {
+:where(.vehicle-details-block) .vehicle-color {
 	align-items: flex-start !important;
 }
 
-.vehicle-color > div > div {
+:where(.vehicle-details-block) .vehicle-color > div > div {
 	align-items: center;
 	display: flex;
 	line-height: 1.3;
 	margin-bottom: 2px;
 }
 
-.vehicle-gallery {
+:where(.vehicle-details-block) .vehicle-gallery {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 	grid-gap: 10px;
@@ -43,7 +26,7 @@
 	overflow-y: auto;
 }
 
-.vehicle-image {
+:where(.vehicle-details-block) .vehicle-image {
 	border-radius: 5px;
 	display: block;
 	height: 100%;
@@ -52,20 +35,20 @@
 	width: 100%;
 }
 
-.vehicle-featured-image {
+:where(.vehicle-details-block) .vehicle-featured-image {
 	grid-column: span 3;
 	grid-row: span 3;
 	line-height: 0;
 }
 
-.vehicle-details {
+:where(.vehicle-details-block) .vehicle-details {
 	column-count: 2;
 	list-style: none;
 	margin: var(--wp--preset--spacing--medium) 0 0;
 	padding: 0;
 }
 
-.vehicle-details li {
+:where(.vehicle-details-block) .vehicle-details li {
 	align-items: center;
 	border-top: 1px solid var(--wp--preset--color--tertiary);
 	display: flex;
@@ -73,7 +56,7 @@
 	padding: var(--wp--preset--spacing--small);
 }
 
-.vehicle-details svg {
+:where(.vehicle-details-block) .vehicle-details svg {
 	stroke: var(--wp--preset--color--primary);
 	margin-right: calc(0.5 * var(--wp--preset--spacing--small));
 }
