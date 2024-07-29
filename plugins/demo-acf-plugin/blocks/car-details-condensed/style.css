@@ -1,0 +1,20 @@
+:where(.wp-block-acf-car-details-condensed) .vehicle-details {
+	border-top: 1px solid var(--wp--preset--color--tertiary);
+	display: flex;
+	font-size: 0.85rem;
+	justify-content: space-between;
+	list-style: none;
+	width: 100%;
+}
+
+:where(.wp-block-acf-car-details-condensed) .vehicle-details li {
+	align-items: center;
+	display: flex;
+	line-height: 1;
+	padding-block: 0.5rem;
+}
+
+:where(.wp-block-acf-car-details-condensed) .vehicle-details svg {
+	stroke: var(--wp--preset--color--primary);
+	margin-right: calc(0.2 * var(--wp--preset--spacing--small));
+}

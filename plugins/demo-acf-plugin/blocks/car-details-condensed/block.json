@@ -1,0 +1,31 @@
+{
+    "name": "acf/car-details-condensed",
+    "title": "Car Details condensed (ACF Block)",
+    "description": "Display car details in a query loop.",
+    "category": "demo-acf-blocks",
+    "icon": "car",
+    "keywords": ["details", "car", "condensed"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "template.php"
+    },
+    "supports": {
+        "align": true,
+        "anchor": true,
+        "color": {
+            "text": true,
+            "background": true
+        },
+        "spacing": {
+            "blockGap": false,
+            "margin": true,
+            "padding": true
+        },
+        "typography": {
+            "fontSize": true,
+            "lineHeight": true,
+            "textAlign": true
+        }
+    },
+    "style": ["file:./style.css"]
+}
