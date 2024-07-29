@@ -10,21 +10,21 @@
 		{
 			"name": "single-car",
 			"postTypes": [
-				"cars"
+				"car"
 			],
 			"title": "Single: Car"
 		},
 		{
-			"name": "archive-car",
+			"name": "archive-cars",
 			"postTypes": [
-				"cars"
+				"car"
 			],
 			"title": "Archive: Car"
 		},
 		{
 			"name": "taxonomy-condition",
 			"postTypes": [
-				"cars"
+				"car"
 			],
 			"title": "Taxonomy: Conditions"
 		}
