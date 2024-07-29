@@ -43,13 +43,6 @@ ul {
 	padding: 0;
 }
 
-ol:where(:not([class*="wp-block"])),
-ol:where(.wp-block-list),
-ul:where(:not([class*="wp-block"])),
-ul:where(.wp-block-list) {
-	padding-inline-start: var(--wp--preset--spacing--medium);
-}
-
 div[class*="wp-block-"] figcaption {
 	color: var(--wp--preset--color--secondary);
 	font-size: var(--wp--preset--font-size--x-small);
@@ -117,6 +110,10 @@ label {
 
 a.more-link {
 	display: block;
+}
+
+ul:where(.unlist) {
+	list-style: none;
 }
 
 /* Inline code */
