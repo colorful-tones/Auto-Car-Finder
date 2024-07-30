@@ -4,7 +4,7 @@
  * Description:       A demo WordPress plugin for custom ACF PRO Blocks, Post Types, Options Pages, Taxonomies  and more.
  * Requires at least: 6.4
  * Requires PHP:      7.4
- * Version:           0.1.8
+ * Version:           0.1.9
  * Author:            ACF
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
