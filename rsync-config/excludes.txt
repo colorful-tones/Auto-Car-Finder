@@ -5,7 +5,9 @@ themes/*
 mu-plugins/
 uploads/
 blogs.dir/
+drop-ins/
 upgrade/*
+upgrade-temp-backup/
 backup-db/*
 advanced-cache.php
 wp-cache-config.php
