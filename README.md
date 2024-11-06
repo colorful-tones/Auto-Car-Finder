@@ -2,7 +2,7 @@
 
 This codebase was part of the WP Engine DevRel workshop: Getting Started with [Advanced Custom Fields (ACF)](https://advancedcustomfields.com) to demonstrate the intricacies of data modeling in WordPress, and the flexibility of ACF to generate and create relationships.
 
-📹 Check out the playback recording from this workshop (**coming soon**) 📹
+📹 [Check out the playback recording from this workshop.](https://www.youtube.com/watch?v=eE17hjOwG3s) 📹
 
 Final demo site [AutoCarFinder.wpenginepowered.com](https://autocarfinder.wpenginepowered.com)
 
